@@ -235,6 +235,15 @@ mark{
 .imgvect{
 	padding:10px 0;
 	margin: 5px 0;
+	color:#979797;
+	background-color:#ffffff;
+}
+.vectcolor{
+	color:#e20074;
+	background-color:#fce6f1;
+	padding:10px 0;
+	margin: 5px 0;
+
 }
 
 
@@ -377,18 +386,18 @@ width:30px;
 
 
   /*side panels*/
-
   .sidepanel  {
-	width: 0;
-	position: fixed;
+	display:block;
+	width: 200px;
+	position: absolute;
 	z-index: 1;
 	height: 500px;
-	top: 0;
-	left: 0;
-	background-color: #ffffff;
+	background-color: #974747;
 	overflow-x: hidden;
 	transition: 0.5s;
-	padding-top: 60px;
+	left:0px;
+	transform: translate(-200px);
+	
   }
   
   .sidepanel a {
@@ -397,15 +406,20 @@ width:30px;
 	font-size: 25px;
 	color: #818181;
 	display: block;
-	transition: 0.3s;
+	transition:0.5s;
   }
-  
   
   .sidepanel .closebtn {
 	position: absolute;
 	top: 0;
 	right: 25px;
 	font-size: 36px;
+  }
+  .show_sidepanel{
+   display:block;
+   transform:translate(0px);
+   transition: 0.5s;
+
   }
 
   /*lifecycle*/

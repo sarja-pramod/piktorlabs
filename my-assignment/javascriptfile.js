@@ -5,7 +5,7 @@ var modal = document.getElementById("myModal");
 var btn = document.getElementById("myBtn");
 var span = document.getElementsByClassName("close")[0];
 btn.onclick = function() {
-  modal.style.display = "block";
+  modal.style.display = "flex";
 }
 span.onclick = function() {
   modal.style.display = "none";
@@ -13,19 +13,16 @@ span.onclick = function() {
 
 }
 
-
+/*nav bar*/
 function function1(id)
 {
 var curr,x,i;
 x = document.getElementsByClassName("imgvect");
+y=document.getElementsByClassName("vectcolor");
 curr=id;
-for(i=0;i<x.length;i++)
-{
-    x[i].style.backgroundColor = "#ffffff";  
-    x[i].style.color ="#979797";  
-}
-document.getElementById(curr).style.color='#e20074';
-document.getElementById(curr).style.backgroundColor='#fce6f1';
+y[0].className="imgvect";
+document.getElementById(curr).className="vectcolor";
+
 
 }
 
@@ -34,11 +31,12 @@ document.getElementById(curr).style.backgroundColor='#fce6f1';
 
    /*sidepanel*/ 
 function openNav() {
-    document.getElementById("mySidepanel").style.width = "300px";
+     document.getElementById("mySidepanel").classList.toggle("show_sidepanel");
+    
   }
   
   function closeNav() {
-    document.getElementById("mySidepanel").style.width = "0";
+    document.getElementById("mySidepanel").classList.toggle("show_sidepanel");
   }
 
 
