@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>DEV CENTER</title>
+  
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+	<link rel="stylesheet" href="style.css">
+	<script src="javascriptfile.js"></script>
+	
+</head>
+<body>
+
+	<header class="header"> 
+		<div class="header-part1">
+			<div class="D"><img src="pics/dd.png"/></div>
+			<div class="dev" onclick="openNav()"  > DEV</div>
+			<div class="center" onclick="openNav()" >CENTER</div>
+		</div>
+			<div class="header-part2">
+			<div class="header-text" onclick="lifecycle_menu()">Lifecycle<img src="pics/Polygon7.svg"/></div>
+			
+			
+			<div id="lifeDropdown" class="life-dropdown-content">
+ 
+				<a> <img src="pics/arrow_up.png"/></a>
+				<a>option 1</a>
+				<a >option 2</a>
+				<a >option 3</a>
+				<a>option 4</a>
+			  </div>
+
+
+  
+			<div class="header-text">Starter Kits</div> 
+			<div class="header-text">Dev journey</div> 
+			<div class="header-text">Resources<img src="pics/Polygon7.svg"/></div> 
+			<div class="header-text">community<img src="pics/Polygon7.svg"/></div>
+		</div>
+		<div class="header-part3">
+			<div class="jason"><img class="search" src="pics/search.png"></div>
+			<div>jason</div>
+			<div><img onclick="jason_menu()" class="group" src="pics/Group.svg"/></div>
+            <div id="jasonDropdown" class="jason-dropdown-content">
+				<a> <img src="pics/arrow_up.png"/></a>
+				<a>option 1</a>
+				<a >option 2</a>
+				<a >option 3</a>
+				<a>option 4</a>
+			  </div>
+				
+			
+
+		</div>
+		
+
+		
+	</header>
+			
+<div id="mySidepanel" class="sidepanel">
+	<a href="#hh" class="closebtn" onclick="closeNav()">×</a>
+  </div>
+
+
+<div class="everything">
+	<div id="main-id" class="vector">
+	
+		<div>Your</div>	
+		<div id="vec1" class="imgvect" onclick="function1('vec1')"><img src="pics/project.png"/>	
+			<div>projcts</div>
+		</div>
+		<div id="vec2" class="imgvect" onclick="function1('vec2')"><img src="pics/contri.png"/>
+		<div>contribution</div>
+	</div>
+		<div id="vec3" class="imgvect" onclick="function1('vec3')"><img src="pics/journey.png"/>
+		<div>journey</div>
+	</div>
+		<div  id="vec4" class="imgvect" onclick="function1('vec4')"><img src="pics/events.png"/>
+		<div>events</div>
+	</div>
+		<div  id="vec5" class="imgvect" onclick="function1('vec5')"><img src="pics/access.png"/>
+		<div>Access control</div>
+	</div>
+		
+	</div>
+<div class="all-content">
+	<div class="main-rect">
+		<div class="rectangle">
+			
+				<h2 class="my_contri">My contributions</h2>
+				<h6 class="below-text">view your documents, blsogposts, tools, and dev journey u've created here</h6>
+		</div>
+		<button id="myBtn" class="new" onclick="f2()">+New<img src="pics/down_arrow.png"/></button>
+		
+		<div id="myModal" class="modal">
+			<div class="modal-content">
+			  <span class="close">&times;</span>
+			</div>
+		  
+		  </div>
+
+</div>
+
+
+
+
+<div class="rectangle1">
+	
+	<div class="active menu">Documents</div>
+	<div class="menu">Blogs</div>
+	<div class="menu">Dev Journey</div>
+	<div class="menu">Tools</div>
+
+</div>
+
+<div class="rectangle2">
+	
+	<div class="tabs">MY CONTRIBUTION</div>
+	<div class="tabs">AWAITING APPROVAL</div>
+	<div class="all-doc tabs">ALL DOCUMENTS</div>
+	
+</div>
+
+
+<table id="lists1" class="lists">
+
+	<tr class="list-header">
+		<th>DOCUMENT TITLE</th>
+		<th>STAGES</th>
+		<th>OWNED BY</th>
+		<th>LAST EDITED</th>
+		<th></th>
+		<th></th><th></th>
+
+	</tr>
+	<tr class="list1">
+		<td class="first">
+			<div class="img11"><img src="pics/page1.png"/></div>
+			<div>Proxy Generation Documentation\</div>
+		</td>
+		<td class="second grey-box"><mark>Development</mark></td>
+		<td class="second">Veneela Nagabandi</td>
+		<td class="second">09/20/2020, 06:07am</td>
+		
+		<td class="green-dot1"></td>
+	
+		<td class="second ">Published</td>
+		<td><img class="Tdot" src="pics/3dots.png"/>
+		</td>
+		
+		
+			
+		
+	</tr>
+	
+<tr class="list2">
+	<td class="first">
+	<div class="img11"><img src="pics/page1.png"/></div>
+	<div>proxygen release notes </div>
+	</td>	
+	<td class="second">...</td>
+	<td class="second">Veneela Nagabandi</td>
+	<td class="second">09/20/2020, 06:07am</td>
+	<td class="green-dot1"></td>
+	<td class="second">Published</td>
+	<td><img class="Tdot" src="pics/3dots.png"/>
+	</td>
+</tr>
+
+<tr class="list3">
+	<td class="first">
+		<div class="img11"><img src="pics/page1.png"/></div>
+		<div>API Security Workshop</div>
+	</td>
+	<td class="second grey-box"><mark>Design</mark></td>
+	<td class="second">ER, Vinay</td>
+	<td class="second">09/20/2020, 06:07am</td>
+	<td class="green-dot1"></td>
+	<td class="second ">Published</td>
+	<td><img class="Tdot" src="pics/3dots.png"/>
+	</td>
+
+</tr>
+
+<tr class="list4">
+	<td class="first">
+		<div class="img11"><img src="pics/page1.png"/></div>
+		<div>Doc under test</div>
+	</td>
+	<td class="second">...</td>
+	<td class="second">Govindaraj, Santhosh</td>
+	<td class="second">09/20/2020, 06:07am</td>
+	<td class="green-dot1"></td>
+	<td class="second">Published</td>
+	<td><img class="Tdot" src="pics/3dots.png"/>
+	</td>
+
+
+</tr>
+
+
+<tr class="list5">
+	<td class="first">
+		<div class="img11"><img src="pics/page1.png"/></div>
+		<div>Common 401 Errors</div>
+	</td>
+	<td class="second">...</td>
+	<td class="second">Govindaraj, Santhosh</td>
+	<td class="second">09/20/2020, 06:07am</td>
+	<td class="green-dot1"></td>
+	<td class="second">Published</td>
+	<td><img class="Tdot" src="pics/3dots.png"/>
+	</td>
+
+</tr>
+
+
+<tr class="list6">
+	<td class="first">
+		<div class="img11"><img src="pics/page1.png"/></div>
+		<div>Using API Explorer</div>
+	</td>
+	<td class="second">...</td>
+	<td class="second">Govindaraj, Santhosh</td>
+	<td class="second">09/20/2020, 06:07am</td>
+	<td class="pink-dot"></td>
+	<td class="second change">Changes Requested</td>
+	<td><img class="Tdot" src="pics/3dots.png"/>
+	</td>
+
+</tr>
+
+<tr class="list7">
+	<td class="first">
+		<div class="img11"><img src="pics/page1.png"/></div>
+		<div>Apigee Orgs / Envs</div>
+	</td>
+	<td class="second grey-box"><mark>Development</mark></td>
+	<td class="second">Govindaraj, Santhosh</td>
+	<td class="second">09/20/2020, 06:07am</td>
+	<td class="green-dot1"></td>
+	<td class="second">Published</td>
+	<td><img class="Tdot" src="pics/3dots.png"/>
+	</td>
+</tr>
+
+
+<tr class="list8">
+	<td class="first">
+		<div class="img11"><img src="pics/page1.png"/></div>
+		<div>Common Gitlab Pipeline Errors</div>
+	</td>
+	<td class="second grey-box"><mark>Development</mark></td>
+	<td v>Govindaraj, Santhosh</td>
+	<td class="second">09/20/2020, 06:07am</td>
+	<td class="green-dot1"></td>
+	<td class="second">Published</td>
+	<td><img class="Tdot" src="pics/3dots.png"/>
+	</td>
+
+</tr>
+
+
+<tr class="list9">
+	<td class="first">
+		<div class="img11"><img src="pics/page1.png"/></div>
+		<div>Apigee UI Access</div>
+	</td>
+	<td class="second grey-box"><mark>Development</mark></td>
+	<td class="second">Kumar, Himanshu</td>
+	<td class="second">09/20/2020, 06:07am</td>
+	<td class="green-dot1"></td>
+	<td class="second">Published</td>
+	<td><img class="Tdot" src="pics/3dots.png"/>
+	</td>
+
+</tr>
+
+
+<tr class="list10">
+	<td class="first">
+		<div class="img11"><img src="pics/page1.png"/></div>
+		<div>Aboard FAQ</div>
+	</td>
+	<td class="second">...</td>
+	<td class="second">ER, Vinay</td>
+	<td class="second">09/20/2020, 06:07am</td>
+	<td class="green-dot1"></td>
+	<td class="second">Published</td>
+	<td><img class="Tdot" src="pics/3dots.png"/>
+	</td>
+
+</tr>
+
+<tr class="list11">
+	<td class="first">
+		<div class="img11"><img src="pics/page1.png"/></div>
+		<div>API Config Tool FAQ</div>
+	</td>
+	<td class="second">...</td>
+	<td class="second">Veneela Nagabandi</td>
+	<td class="second">09/20/2020, 06:07am</td>
+	<td class="grey-dot"></td>
+	<td class="second">Draft</td>
+	<td><img class="Tdot" src="pics/3dots.png"/>
+	</td>
+
+</tr>
+
+
+<tr class="list12">
+	<td class="first">
+		<div class="img11"><img src="pics/page1.png"/></div>
+		<div>API Security</div>
+	</td>
+	<td class="second grey-box"><mark>Design</mark></td>
+	<td class="second">Veneela Nagabandi</td>
+	<td class="second">09/20/2020, 06:07am</td>
+	<td class="grey-dot"></td>
+	<td class="second">Draft</td>
+	<td><img class="Tdot" src="pics/3dots.png"/>
+	</td>
+	
+</tr>
+
+
+</table>
+<div class="show-more" onclick="show_more()">Show more</div>
+</div>
+
+</div>
+
+
+
+</body>
+</body>
+</html>
+
+
+	
+
