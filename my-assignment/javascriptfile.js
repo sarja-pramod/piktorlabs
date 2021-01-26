@@ -41,7 +41,10 @@ function openNav() {
 
   /*lifecycle menu*/
   function lifecycle_menu() {
+    document.getElementById("lifeDropdown").classList.toggle("arrow_box1");
     document.getElementById("lifeDropdown").classList.toggle("show");
+   
+
   }
   
   window.onclick = function(event) {
@@ -60,8 +63,9 @@ function openNav() {
       let dropdowns = document.getElementsByClassName("life-dropdown-content");
       let i;
         let openDropdown = dropdowns[0];
-        if (openDropdown.classList.contains('show')) {                                      
-          openDropdown.classList.remove('show');
+        if (openDropdown.classList.contains('life-dropdown-content')) {                                      
+          openDropdown.classList.remove('show')
+          openDropdown.classList.remove('arrow_box1');
         }
       
     }
@@ -74,8 +78,9 @@ function openNav() {
         let dropdowns = document.getElementsByClassName("jason-dropdown-content");
         let i;
           let openDropdown = dropdowns[0];
-          if (openDropdown.classList.contains('life-show')) {                                      
-            openDropdown.classList.remove('life-show');
+          if (openDropdown.classList.contains('jason-dropdown-content')) {                                      
+            openDropdown.classList.remove('show')
+          openDropdown.classList.remove('arrow_box2');
           }
         
       }
@@ -88,7 +93,10 @@ function openNav() {
   /* jason menu*/
 
   function jason_menu() {
-    document.getElementById("jasonDropdown").classList.toggle("life-show");
+    document.getElementById("jasonDropdown").classList.toggle("arrow_box2");
+    document.getElementById("jasonDropdown").classList.toggle("show");
+   
+
   }
 
 
