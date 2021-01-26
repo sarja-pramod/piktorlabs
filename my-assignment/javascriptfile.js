@@ -1,9 +1,9 @@
 
 function f2(){
-var modal = document.getElementById("myModal");
+let modal = document.getElementById("myModal");
 modal.classList.toggle("modal_open");
-var btn = document.getElementById("myBtn");
-var span = document.getElementsByClassName("close")[0];
+let btn = document.getElementById("myBtn");
+let span = document.getElementsByClassName("close")[0];
 
 span.onclick = function() {
  modal.className="modal"
@@ -14,7 +14,7 @@ span.onclick = function() {
 /*nav bar*/
 function function1(id)
 {
-var curr,x,i;
+let curr,x,i;
 x = document.getElementsByClassName("imgvect");
 y=document.getElementsByClassName("vectcolor");
 curr=id;
@@ -45,7 +45,7 @@ function openNav() {
   }
   
   window.onclick = function(event) {
-    var modal = document.getElementById("myModal");
+    let modal = document.getElementById("myModal");
 
     document.getElementById("jasonDropdown").addEventListener('click', function (event) { 
   
@@ -57,9 +57,9 @@ function openNav() {
 }); 
 
     if ((!event.target.matches('.header-text')) ) {
-      var dropdowns = document.getElementsByClassName("life-dropdown-content");
-      var i;
-        var openDropdown = dropdowns[0];
+      let dropdowns = document.getElementsByClassName("life-dropdown-content");
+      let i;
+        let openDropdown = dropdowns[0];
         if (openDropdown.classList.contains('show')) {                                      
           openDropdown.classList.remove('show');
         }
@@ -71,9 +71,9 @@ function openNav() {
       modal.className="modal"
     }
     if (!event.target.matches('.group')) {
-        var dropdowns = document.getElementsByClassName("jason-dropdown-content");
-        var i;
-          var openDropdown = dropdowns[0];
+        let dropdowns = document.getElementsByClassName("jason-dropdown-content");
+        let i;
+          let openDropdown = dropdowns[0];
           if (openDropdown.classList.contains('life-show')) {                                      
             openDropdown.classList.remove('life-show');
           }
