@@ -5,6 +5,8 @@ import Rectangle1 from './components/rectangle1';
 import Rectangle2 from './components/rectangle2';
 import Table from './components/table';
 import Show from './components/showmore';
+
+
 function App() {
   return (
     <div className="App">
