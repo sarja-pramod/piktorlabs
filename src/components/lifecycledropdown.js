@@ -1,7 +1,7 @@
 
 const lifecycledropdown = () => {
     return (
-        <div id="lifeDropdown" class="life-dropdown-content">
+        <div id="lifeDropdown" className="life-dropdown-content">
         <a>option 1</a>
         <a >option 2</a>
         <a >option 3</a>

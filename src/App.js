@@ -4,8 +4,8 @@ import Mrectangle from './components/mainrectangle';
 import Rectangle1 from './components/rectangle1';
 import Rectangle2 from './components/rectangle2';
 import Table from './components/table';
-import Show from './components/showmore';
 
+import Table1 from './components/Table1';
 
 
 function App() {
@@ -19,8 +19,8 @@ function App() {
       <Mrectangle/>
       <Rectangle1/>
       <Rectangle2/>
-      <Table/>
-      <Show/>
+      <Table1 className="lists" />
+      
 
        </div>
      </div>
