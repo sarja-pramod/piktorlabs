@@ -1,10 +1,10 @@
-import page from './pics/page1.png';
-import dots from "./pics/3dots.png"
+import page from './pics/abc.jpg';
+import dots from "./pics/three.jpg";
 
 const table = () => {
     return (
         <table id="lists1" className="lists">
-
+ <tbody className="listbody">
 	<tr className="list-header">
 		<th>DOCUMENT TITLE</th>
 		<th>STAGES</th>
@@ -204,7 +204,7 @@ const table = () => {
 	
 </tr>
 
-
+</tbody>
 </table>
     )
 }

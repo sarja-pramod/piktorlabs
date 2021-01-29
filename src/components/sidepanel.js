@@ -8,7 +8,7 @@
 const sidepanel = () => {
     return (
         <div id="mySidepanel" class="sidepanel">
-		<a href="#hh" class="closebtn" onClick={closeNav}>×</a>
+		<a href="#hh" className="closebtn" onClick={closeNav}>×</a>
 	  </div>
 	  
     )

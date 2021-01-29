@@ -211,8 +211,8 @@ padding: 0 10px 0 10px;
 
   }
 td>.Tdot{
-	height:30px;
-	width:30px;
+	height: 16px;
+    width: 16px
 }
 mark{
 	background-color:#ebf0f8;

@@ -1,5 +1,6 @@
-import page from "./pics/3dots.png";
-import dots from "./pics/3dots.png";
+
+import page1 from './pics/abc.jpg';
+import dots1 from "./pics/three.jpg";
 
 let  jason=[
     {
@@ -31,22 +32,22 @@ let  jason=[
        let key;
 const  show_more=()=> {
     for(key in jason){
- let  html=`<tr className="${jason[key].title}}">
-   <td className="first">
-   <div className="img11"><img src=${page}/></div>
+ let  html=`<tr class="${jason[key].title}">
+   <td class="first">
+   <div class="img11"><img src=${page1}/></div>
    <div>${jason[key].document_title}</div>
    </td>	
-   <td className="second ${jason[key].class}">${jason[key].stages}</td>
-   <td className="second">${jason[key].owned_by}</td>
-   <td className="second">09/20/2020, 06:07am</td>
-   <td className="green-dot1"></td>
-   <td className="second">Published</td>
-   <td><img className="Tdot" src={dots}/>
+   <td class="second ${jason[key].class}">${jason[key].stages}</td>
+   <td class="second">${jason[key].owned_by}</td>
+   <td class="second">09/20/2020, 06:07am</td>
+   <td class="green-dot1"></td>
+   <td class="second">Published</td>
+   <td><img class="Tdot" src=${dots1}/>
    </td>
    </tr>
    `
    
-   document.getElementsByClassName('lists')[0].innerHTML+=html;
+   document.getElementsByClassName('listbody')[0].innerHTML+=html;
     }
    
    }
