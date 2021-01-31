@@ -1,7 +1,6 @@
 import react,{useState} from 'react';
-import page1 from './pics/abc.jpg';
-import dots1 from "./pics/three.jpg";
-import data from "./jsondata.json"
+import data from "./jsondata.json";
+import data2 from "./showmordata";
 let  jason=[
     {
       title:"list13",

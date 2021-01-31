@@ -3,35 +3,20 @@ import page1 from './pics/abc.jpg';
 import dots1 from "./pics/three.jpg";
 import json from './jsondata.json';
 import Show from './showmore';
+import data2 from "./showmordata"
 
 const Table1 = () => {
 
-    var abc=json.map((ro)=>(
-        <tr className={ro.title}>
-        <td className="first">
-            <div className="img11"><img src={page1}/></div>
-            <div>{ro.document_title}</div>
-        </td>	
-        <td className="second"> <mark>{ro.stages}</mark></td>
-        <td className="second">{ro.owned_by}</td>
-        <td className="second">09/20/2020, 06:07am</td>
-        <td className="green-dot1"></td>
-        <td className="second">Published</td>
-        <td><img className="Tdot" src={dots1}/>
-        </td>
-        </tr>
-))
-
+var j=0;
     function handleclick() {
-        // Similar to this.setState({ fruit: 'orange' })
-        var a=json.push(abc);
-        show_more(a);
+var i;     
+    for(i=0;i<data2.length;i++){
+        json1.push(data2[i]);}
+    show_more([...json1]);
+console.log("jgfd");
       }
    
-         const [json1,show_more]=useState([
-            
-        ]
-        );
+         const [json1,show_more]=useState(json);
 
      
     return (
@@ -39,7 +24,7 @@ const Table1 = () => {
         <>
         <table className="lists" id="lists1">
             <tbody>
-            {json.map((row)=>(
+            {json1.map((row)=>(
                     <tr className={row.title}>
                     <td className="first">
                         <div className="img11"><img src={page1}/></div>
