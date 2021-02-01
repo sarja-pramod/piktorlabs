@@ -24,8 +24,17 @@ console.log("jgfd");
         <>
         <table className="lists" id="lists1">
             <tbody>
+            <tr className="list-header">
+		<th>DOCUMENT TITLE</th>
+		<th>STAGES</th>
+		<th>OWNED BY</th>
+		<th>LAST EDITED</th>
+		<th></th>
+		<th></th><th></th>
+
+	</tr>
             {json1.map((row)=>(
-                    <tr className={row.title}>
+                    <tr className="rows">
                     <td className="first">
                         <div className="img11"><img src={page1}/></div>
                         <div>{row.document_title}</div>
